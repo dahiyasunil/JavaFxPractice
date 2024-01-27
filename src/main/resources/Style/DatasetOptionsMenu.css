@@ -1,0 +1,19 @@
+.main_menu_container {
+-fx-alignment: top-center;
+-fx-spacing: 6;
+-fx-padding: 5;
+}
+
+.main_menu_container Button {
+-fx-pref-width: 176;
+-fx-pref-height: 28;
+-fx-background-color: #8EA7E9;
+-fx-background-radius: 10;
+-fx-padding: 7 3 7 3;
+-fx-font-size: 1.1em;
+-fx-effect: dropshadow(three-pass-box, #CCCCCC, 5,0,0,4);
+}
+
+.main_menu_container Button:hover {
+-fx-cursor: hand;
+}

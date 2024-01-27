@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="620.0" styleClass="main_container" stylesheets="@../../Style/datasets/Client.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.practice.javafx.controllers.datasets.ClientController">
+    
+    <Label fx:id="temp_lbl" layoutX="160.0" layoutY="225.0"/>
+</AnchorPane>

@@ -1,0 +1,13 @@
+.main_container {
+-fx-alignment : center;
+}
+
+.main_container Label {
+-fx-alignment: center;
+-fx-font-size: 1.4em;
+-fx-pref-width: 300;
+-fx-padding: 10;
+-fx-effect: dropshadow(three-pass-box, #CCCCCC, 5, 0, 0, 4);
+-fx-font-family: verdana;
+-fx-text-fill: #7286D3
+}
