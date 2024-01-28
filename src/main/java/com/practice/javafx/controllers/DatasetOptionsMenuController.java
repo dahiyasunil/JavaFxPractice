@@ -1,5 +1,6 @@
 package com.practice.javafx.controllers;
 
+import com.practice.javafx.models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
@@ -14,6 +15,29 @@ public class DatasetOptionsMenuController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        addListenersForDatasetButtons();
+    }
 
+    private void addListenersForDatasetButtons() {
+        client_btn.setOnAction(actionEvent -> onClient());
+        telephone_banking_btn.setOnAction(actionEvent -> onTelephoneBanking());
+        accounts_btn.setOnAction(actionEvent -> onAccounts());
+        cards_btn.setOnAction(actionEvent -> onCards());
+    }
+
+    private void onClient() {
+        Model.getInstance().getViewFactory().getSelectedDatasetItem().set("Client");
+    }
+
+    private void onTelephoneBanking() {
+        Model.getInstance().getViewFactory().getSelectedDatasetItem().set("TelephoneBanking");
+    }
+
+    private void onAccounts() {
+        Model.getInstance().getViewFactory().getSelectedDatasetItem().set("Accounts");
+    }
+
+    private void onCards() {
+        Model.getInstance().getViewFactory().getSelectedDatasetItem().set("Cards");
     }
 }

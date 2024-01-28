@@ -8,5 +8,5 @@
             xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.practice.javafx.controllers.datasets.CardsController">
     
-    <Label fx:id="temp_lbl" layoutX="110.0" layoutY="14.0"/>
+    <Label fx:id="temp_lbl" layoutX="60.0" layoutY="14.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="14.0"/>
 </AnchorPane>

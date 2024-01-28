@@ -1,6 +1,8 @@
 package com.practice.javafx.views;
 
 import com.practice.javafx.controllers.HomeScreenController;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -10,11 +12,21 @@ import java.io.IOException;
 
 public class ViewFactory {
 
+    private final StringProperty selectedDatasetItem;
+
     //Datasets views
     private AnchorPane clientView;
     private AnchorPane telephoneBankingView;
     private AnchorPane accountsView;
     private AnchorPane cardsView;
+
+    public ViewFactory() {
+        this.selectedDatasetItem = new SimpleStringProperty("");
+    }
+
+    public StringProperty getSelectedDatasetItem() {
+        return selectedDatasetItem;
+    }
 
     public AnchorPane getClientView() {
         if (clientView == null) {
