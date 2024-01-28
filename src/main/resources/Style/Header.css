@@ -4,10 +4,10 @@
 
 .header_container Text {
 -fx-alignment: left-center;
+-fx-fill: #fff2f2;
 -fx-font-size: 2em;
 -fx-font-family: verdana;
 -fx-font-weight: 700;
--fx-fill: #fff2f2;
 -fx-effect: dropshadow(three-pass-box, #AAAAAA, 5,0,0,4);
 }
 
@@ -16,7 +16,7 @@
 -fx-font-size: 2em;
 -fx-font-family: verdana;
 -fx-font-weight: 700;
--fx-text-fill: #fff2f2;
+-fx-text-fill: #FFF2F2;
 }
 
 .header_container Button:hover {

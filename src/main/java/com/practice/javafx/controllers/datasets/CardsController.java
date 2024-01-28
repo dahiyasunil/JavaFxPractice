@@ -11,6 +11,6 @@ public class CardsController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        temp_lbl.setText("Welcome to Cards Dataset Flow!");
     }
 }
